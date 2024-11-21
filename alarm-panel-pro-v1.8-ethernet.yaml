@@ -106,9 +106,9 @@ packages:
 
       ####
       # INPUT ZONES
-      - packages/alarm-panel/zone1.yaml
-      - packages/alarm-panel/zone2.yaml
-      - packages/alarm-panel/zone3.yaml
+     # - packages/alarm-panel/zone1.yaml
+     # - packages/alarm-panel/zone2.yaml
+     # - packages/alarm-panel/zone3.yaml
       - packages/alarm-panel/zone4.yaml
       - packages/alarm-panel/zone5.yaml
       - packages/alarm-panel/zone6.yaml
