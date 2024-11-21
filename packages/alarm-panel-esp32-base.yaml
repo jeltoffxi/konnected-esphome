@@ -104,32 +104,6 @@ packages:
       # Enables the onboard blue status LED as an activity/error indicator
       - packages/status-led.yaml
 
-      ####
-      # INPUT ZONES
-      - packages/alarm-panel/zone1.yaml
-      - packages/alarm-panel/zone2.yaml
-      - packages/alarm-panel/zone3.yaml
-      - packages/alarm-panel/zone4.yaml
-      - packages/alarm-panel/zone5.yaml
-      - packages/alarm-panel/zone6.yaml
-      - packages/alarm-panel/zone7.yaml
-      - packages/alarm-panel/zone8.yaml
-      - packages/alarm-panel/zone9.yaml
-      - packages/alarm-panel/zone10.yaml
-      - packages/alarm-panel/zone11.yaml
-      - packages/alarm-panel/zone12.yaml
-
-      ####
-      # OUTPUTS
-      - packages/alarm-panel/alarm1.yaml
-      - packages/alarm-panel/alarm2.yaml
-
-      ####
-      # WARNING BEEP
-      # Enables a 'Warning Beep' entity, intended to be used with a piezo buzzer or other pulsing.
-      # binary output This is implemented using the light component with strobe effect to create a 
-      # repeated beeping sound or pulsing action that can be turned on via the _strobe_ effect.
-      - packages/warning-beep.yaml
   
 dashboard_import:
   package_import_url: github://jeltoffxi/konnected-esphome/alarm-panel-pro-v1.8-ethernet.yaml@master
