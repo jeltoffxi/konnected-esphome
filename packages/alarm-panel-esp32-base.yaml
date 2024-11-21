@@ -92,17 +92,17 @@ packages:
       ####
       # CORE
       # This package is required and sets up core features.
-      - packages/core-esp32.yaml
+      - core-esp32.yaml
 
       ####
       # ETHERNET
       # Enables ethernet connectivity.
-      - packages/ethernet.yaml
+      - ethernet.yaml
 
       ####
       # STATUS LED
       # Enables the onboard blue status LED as an activity/error indicator
-      - packages/status-led.yaml
+      - status-led.yaml
 
       ####
       # INPUT ZONES
