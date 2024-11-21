@@ -3,8 +3,3 @@ sensor:
     name: "Zone 1"
     pin: GPIO04
     update_interval : 1s
-    total:
-      unit_of_measurement: 'L'
-      name: 'Gallons'
-      filters:
-        - multiply: 10.0
