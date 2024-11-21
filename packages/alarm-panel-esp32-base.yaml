@@ -92,23 +92,23 @@ packages:
       ####
       # CORE
       # This package is required and sets up core features.
-      - core-esp32.yaml
+      - packages/core-esp32.yaml
 
       ####
       # ETHERNET
       # Enables ethernet connectivity.
-      - ethernet.yaml
+      - packages/ethernet.yaml
 
       ####
       # STATUS LED
       # Enables the onboard blue status LED as an activity/error indicator
-      - status-led.yaml
+      - packages/status-led.yaml
 
       ####
       # INPUT ZONES
-      - ackages/alarm-panel/zone1.yaml
-      - ackages/alarm-panel/zone2.yaml
-      - ackages/alarm-panel/zone3.yaml
+      - packages/alarm-panel/zone1.yaml
+      - packages/alarm-panel/zone2.yaml
+      - packages/alarm-panel/zone3.yaml
       - packages/alarm-panel/zone4.yaml
       - packages/alarm-panel/zone5.yaml
       - packages/alarm-panel/zone6.yaml
