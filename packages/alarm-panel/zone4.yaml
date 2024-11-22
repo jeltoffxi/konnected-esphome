@@ -5,7 +5,7 @@ sensor:
     filters:
        - multiply: 600  # (60s/0.1 pulse per Gallon)
     pin: GPIO13
-    update_interval : 1s
+    update_interval : 30s
 
     total:
       unit_of_measurement: 'Gallons'
