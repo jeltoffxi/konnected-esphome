@@ -11,4 +11,4 @@ sensor:
       unit_of_measurement: 'Gallons'
       name: 'Zone 4 Total Gallons'
       filters:
-        - multiply: 0.1  # (1/10 pulses per 10 Gallons)
+        - multiply: 1  # (1 pulses per 10 Gallons)
