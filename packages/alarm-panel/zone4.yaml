@@ -3,7 +3,7 @@ sensor:
     unit_of_measurement: 'Gallons'
     name: "Zone 4"
     filters:
-      - multiply: 6  # (60s/0.1 pulse per Gallon)
+      - multiply: 10  # (60s/0.1 pulse per Gallon)
     pin: GPIO13
     update_interval : 60s
 
