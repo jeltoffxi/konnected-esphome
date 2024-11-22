@@ -1,5 +1,5 @@
 sensor:
   - platform: pulse_counter
     name: "Zone 2"
-    pin: $zone2
+    pin: GPIO02
     update_interval : 1s
