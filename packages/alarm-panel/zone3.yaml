@@ -1,5 +1,14 @@
 sensor:
   - platform: pulse_counter
-    name: "Zone 3"
+    unit_of_measurement: 'Gallons'
+    name: "Zone 1"
+    filters:
+       - multiply: 600  # (60s/0.1 pulse per Gallon)
     pin: GPIO15
     update_interval : 1s
+
+    total:
+      unit_of_measurement: 'Gallons'
+      name: 'Zone 1 Total Gallons'
+      filters:
+        - multiply: 0.1  # (1/10 pulses per 10 Gallons)
