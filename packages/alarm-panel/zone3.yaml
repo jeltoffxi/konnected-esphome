@@ -3,7 +3,7 @@ sensor:
     unit_of_measurement: 'Gallons'
     name: "Zone 3"
     filters:
-       - multiply: 600  # (60s/0.1 pulse per Gallon)
+       - multiply: 60  # (60s/0.1 pulse per Gallon)
     pin: GPIO15
     update_interval : 60s
 
