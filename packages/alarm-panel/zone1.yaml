@@ -3,7 +3,7 @@ sensor:
     unit_of_measurement: 'Gallons'
     name: "Zone 1"
     filters:
-      - multiply: 1  # (60s/10 pulse per Gallon)
+      - multiply: 1 
     pin: GPIO04
     update_interval : 60s
 
@@ -11,4 +11,4 @@ sensor:
       unit_of_measurement: 'Gallons'
       name: 'Zone 1 Total Gallons'
       filters:
-        - multiply: 10  # (1/10 pulses per 10 Gallons)
+        - multiply: 10 
