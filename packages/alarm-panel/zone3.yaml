@@ -5,6 +5,10 @@ sensor:
     filters:
       - multiply: 1  # (60s/0.1 pulse per Gallon)
     pin: GPIO15
+    inverted: false
+    mode:
+      input: true
+      pullup: true
     update_interval : 60s
 
     total:
