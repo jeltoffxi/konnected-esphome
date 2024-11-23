@@ -1,9 +1,14 @@
 sensor:
   - platform: pulse_counter
-    pin:
-      number: 13
-      inverted: true
-      mode:
-        input: true
-        pullup: true
-    name: "Pulse Counter"
+    unit_of_measurement: 'Gallons'
+    name: "Zone 4"
+    filters:
+      - multiply: 1 
+    pin: GPIO13
+    update_interval : 60s
+
+    total:
+      unit_of_measurement: 'Gallons'
+      name: 'Zone 4 Total Gallons'
+      filters:
+        - multiply: 10 
