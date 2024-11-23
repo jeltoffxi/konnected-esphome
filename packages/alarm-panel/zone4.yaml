@@ -4,7 +4,8 @@ sensor:
     name: "Zone 4"
     filters:
       - multiply: 1  
-    pin: GPIO13
+    pin: 
+      number: 13
       inverted: true
       mode:
         input: true
