@@ -5,10 +5,6 @@ sensor:
     filters:
       - multiply: 1 
     pin: GPIO15
-    inverted: false
-    mode:
-      input: true
-      pullup: true
     update_interval : 60s
 
     total:
