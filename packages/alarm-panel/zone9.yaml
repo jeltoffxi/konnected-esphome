@@ -5,7 +5,7 @@ sensor:
     filters:
       - multiply: 10
     pin: GPIO36
-    update_interval : 3600s
+    update_interval : 60s
 
     total:
       unit_of_measurement: 'Gallons'
