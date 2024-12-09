@@ -1,17 +1,14 @@
-binary_sensor:
-
-  - id: zone7
-    name: Zone 7    
-    pin:
-      number: $zone7
-      mode: INPUT_PULLUP
-      inverted: True
-    platform: gpio   
+sensor:
+  - platform: pulse_counter
+    unit_of_measurement: 'Gallons per Hour'
+    name: "Zone 7"
     filters:
-      - delayed_on_off: $sensor_debounce_time
-    on_state:
-      - if:
-          condition:
-            lambda: return id(blink_on_state);
-          then:
-            - script.execute: blink_status_led
+      - multiply: 10
+    pin: GPIO33
+    update_interval : 3600s
+
+    total:
+      unit_of_measurement: 'Gallons'
+      name: 'Zone 7 Total Gallons'
+      filters:
+        - multiply: 10 
