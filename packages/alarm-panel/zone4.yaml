@@ -1,14 +1,17 @@
-sensor:
-  - platform: pulse_counter
-    unit_of_measurement: 'Gallons'
-    name: "Zone 4"
-    filters:
-      - multiply: 1 
-    pin: GPIO13
-    update_interval : 60s
+binary_sensor:
 
-    total:
-      unit_of_measurement: 'Gallons'
-      name: 'Zone 4 Total Gallons'
-      filters:
-        - multiply: 10 
+  - id: zone4
+    name: Zone 4
+    pin:
+      number: $zone4
+      mode: INPUT
+      inverted: True
+    platform: gpio   
+    filters:
+      - delayed_on_off: $sensor_debounce_time
+    on_state:
+      - if:
+          condition:
+            lambda: return id(blink_on_state);
+          then:
+            - script.execute: blink_status_led
