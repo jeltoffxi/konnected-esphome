@@ -1,11 +1,11 @@
 sensor:
   - platform: pulse_counter
-    unit_of_measurement: 'Gallons'
+    unit_of_measurement: 'Gallons per Hour'
     name: "Zone 3"
     filters:
-      - multiply: 1 
+      - multiply: 10
     pin: GPIO15
-    update_interval : 60s
+    update_interval : 3600s
 
     total:
       unit_of_measurement: 'Gallons'
