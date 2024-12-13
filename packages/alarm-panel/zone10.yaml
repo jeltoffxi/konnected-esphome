@@ -1,7 +1,7 @@
 binary_sensor:
 
   - id: zone10
-    name: Zone 10    
+    name: Zone 10
     pin:
       number: $zone10
       mode: INPUT
