@@ -1,10 +1,10 @@
 binary_sensor:
 
   - id: zone6
-    name: Zone 6    
+    name: Zone 6
     pin:
       number: $zone6
-      mode: INPUT_PULLUP
+      mode: INPUT
       inverted: True
     platform: gpio   
     filters:
