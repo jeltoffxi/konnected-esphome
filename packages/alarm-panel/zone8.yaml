@@ -4,7 +4,7 @@ binary_sensor:
     name: Zone 8
     pin:
       number: $zone8
-      mode: INPUT
+      mode: INPUT_PULLUP
       inverted: True
     platform: gpio   
     filters:
