@@ -1,14 +1,8 @@
-sensor:
-  - platform: pulse_counter
-    unit_of_measurement: 'Gallons per Minute'
-    name: "Zone 3"
-    filters:
-      - multiply: 10
-    pin: GPIO15
-    update_interval : 60s
+switch:
 
-    total:
-      unit_of_measurement: 'Gallons'
-      name: 'Zone 3 Total Gallons'
-      filters:
-        - multiply: 10 
+  - id: zone3
+    name: Zone 3
+    pin:
+      number: $zone3
+    platform: gpio   
+
