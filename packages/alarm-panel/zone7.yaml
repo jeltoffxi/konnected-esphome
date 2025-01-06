@@ -1,14 +1,14 @@
 sensor:
   - platform: pulse_counter
-    unit_of_measurement: 'Gallons per Minute'
+    unit_of_measurement: 'Litters per Minute'
     name: "Zone 7"
     filters:
-      - multiply: 10
+      - multiply: 1
     pin: GPIO33
     update_interval : 60s
 
     total:
-      unit_of_measurement: 'Gallons'
-      name: 'Zone 7 Total Gallons'
+      unit_of_measurement: 'Liters'
+      name: 'Zone 7 Total Liters'
       filters:
-        - multiply: 10 
+        - multiply: 1 
