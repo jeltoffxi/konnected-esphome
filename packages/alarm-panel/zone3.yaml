@@ -4,5 +4,5 @@ output:
     id: 'zone3_out'
 switch:
   - platform: output
-    name: "Generic Output"
-    output: 'generic_out'
+    name: "Zone 3"
+    output: 'zone3_out'
