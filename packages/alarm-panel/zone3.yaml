@@ -1,8 +1,9 @@
 output:
   - platform: gpio
-    pin: $zone3
+    pin: GPIO15
     id: 'zone3_out'
 switch:
   - platform: output
-    name: "Zone 3"
+    id: zone3
+    name: "Zone 3 Toggle"
     output: 'zone3_out'
