@@ -4,7 +4,12 @@ sensor:
     name: "Zone 1"
     filters:
       - multiply: 1
-    pin: GPIO04
+    pin:
+        number: GPIO04
+        inverted: true
+        mode:
+          input: true
+          pullup: true
     update_interval : 60s
 
     total:
