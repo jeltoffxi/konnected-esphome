@@ -1,8 +1,5 @@
 switch:
-
-  - id: zone3
+  - platform: gpio
+    pin: $zone3
     name: Zone 3
-    pin:
-      number: $zone3
-    platform: gpio   
-
+    id: zone3
