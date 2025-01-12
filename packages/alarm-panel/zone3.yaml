@@ -3,3 +3,12 @@ switch:
     pin: $zone3
     name: Zone 3
     id: zone3
+output:
+  - platform: gpio
+    pin: GPIOXX
+    name: Zone 3
+    id: zone3
+switch:
+  - platform: output
+    name: "Generic Output"
+    output: 'generic_out'
