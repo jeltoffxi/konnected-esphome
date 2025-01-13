@@ -9,6 +9,3 @@ sensor:
         mode:
           input: true
           pullup: true
-
- total:
-      name: "Zone 1.2 Total Pulses"
