@@ -4,8 +4,11 @@ sensor:
     name: "Zone 9"
     filters:
       - multiply: 10
-    pin: GPIO36
+    pin:
+        number: GPIO36
+        inverted: true
         drive_strength: 10.0
+
     update_interval : 60s
 
     total:
