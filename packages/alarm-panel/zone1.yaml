@@ -1,11 +1,4 @@
-
-    unit_of_measurement: 'L'
-    device_class: water
-    state_class: measurement   
-    internal_filter_mode: pulse
-    internal_filter: 200ms 
-    timeout: 1min
-    accuracy_decimals: 0
+\
    
 
    
@@ -15,13 +8,16 @@
   - platform: pulse_width
     name: 'Zone 1.2'
     id: zone_1_2_pulse_meter
+    device_class: water
+    state_class: measurement  
+    
     pin:
     number: GPIO04
         inverted: true
         mode:
           input: true
           pullup: true
- 
+
  total:
-      name: "Zone 1.1 Total Pulses"
+      name: "Zone 1.2 Total Pulses"
       
