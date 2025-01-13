@@ -1,7 +1,7 @@
 sensor:
   - platform: pulse_meter
-    name: 'Zone 1'
-    id: zone_1_pulse_meter
+    name: 'Zone 1.1'
+    id: zone_1_1_pulse_meter
     unit_of_measurement: 'L'
     device_class: water
     state_class: measurement   
@@ -21,4 +21,4 @@ sensor:
       - heartbeat: 1s
       
     total:
-      name: "Zone 1 Total Pulses"
+      name: "Zone 1.1 Total Pulses"
