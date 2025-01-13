@@ -7,7 +7,7 @@ sensor:
     state_class: measurement   
     internal_filter_mode: pulse
     internal_filter: 200ms 
-    timeout: 1m
+    timeout: 1min
     accuracy_decimals: 0
     pin:
         number: GPIO04
