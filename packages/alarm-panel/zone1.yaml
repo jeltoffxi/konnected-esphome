@@ -6,6 +6,7 @@ sensor:
     pin:
         number: GPIO04
         inverted: true
+        drive_strength: 10.0
         mode:
           input: true
           pullup: true
