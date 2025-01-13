@@ -4,7 +4,7 @@ sensor:
     id: zone_1_2_pulse_meter
     update_interval: 1s    
     pin:
-    number: GPIO04
+        number: GPIO04
         inverted: true
         mode:
           input: true
