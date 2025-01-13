@@ -8,7 +8,6 @@ sensor:
         number: GPIO36
         inverted: true
         drive_strength: 10.0
-
     update_interval : 60s
 
     total:
