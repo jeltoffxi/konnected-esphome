@@ -5,7 +5,7 @@ sensor:
     unit_of_measurement: 'L'
     device_class: water
     state_class: measurement
-    update_interval: 1s
+    throttle_average: 1s
     internal_filter: 100ms 
     accuracy_decimals: 0
     pin:
