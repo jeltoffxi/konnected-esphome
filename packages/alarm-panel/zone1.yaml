@@ -4,8 +4,7 @@ sensor:
     id: zone_1_pulse_meter
     unit_of_measurement: 'L'
     device_class: water
-    state_class: measurement
-    throttle_average: 1s
+    state_class: measurement   
     internal_filter: 100ms 
     accuracy_decimals: 0
     pin:
@@ -17,6 +16,7 @@ sensor:
    
     filters:
       - multiply: 1
+      - throttle_average: 1s
       
     total:
       name: "Zone 1 Total Pulses"
