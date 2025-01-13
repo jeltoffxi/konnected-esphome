@@ -1,11 +1,12 @@
 sensor:
   - platform: pulse_meter
-    name: 'Zone 1M'
+    name: 'Zone 1'
     id: zone_1_pulse_meter
     unit_of_measurement: 'L'
     device_class: water
     state_class: measurement   
-    internal_filter: 100ms 
+    internal_filter_mode: pulse
+    internal_filter: 200ms 
     accuracy_decimals: 0
     pin:
         number: GPIO04
@@ -16,7 +17,7 @@ sensor:
    
     filters:
       - multiply: 1
-      - throttle_average: 1s
+      - heartbeat: 1
       
     total:
       name: "Zone 1 Total Pulses"
