@@ -1,4 +1,4 @@
- sensor:
+sensor:
   - platform: pulse_width
     name: 'Zone 1.2'
     id: zone_1_2_pulse_meter
