@@ -17,7 +17,7 @@ sensor:
    
     filters:
       - multiply: 1
-      - heartbeat: 1
+      - heartbeat: 1s
       
     total:
       name: "Zone 1 Total Pulses"
