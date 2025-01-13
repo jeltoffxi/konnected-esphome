@@ -5,7 +5,7 @@ sensor:
     filters:
       - multiply: 10
     pin: GPIO18
-         drive_strength: 10.0
+        drive_strength: 10.0
     update_interval : 60s
 
     total:
