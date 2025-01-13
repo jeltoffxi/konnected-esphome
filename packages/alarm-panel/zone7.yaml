@@ -6,6 +6,7 @@ sensor:
       - multiply: 1
     pin:
         number: GPIO33
+        drive_strength: 10.0
         inverted: true
         mode:
           input: true
