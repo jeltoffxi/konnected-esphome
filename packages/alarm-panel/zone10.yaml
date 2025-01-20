@@ -3,4 +3,4 @@ sensor:
     pin: GPIO39
     name: "Zone 10 Sensible Voltage"
     update_interval: 1s
-    attenuation: auto
+    attenuation: 12dB
