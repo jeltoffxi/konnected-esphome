@@ -4,7 +4,7 @@ sensor:
     id: zone_5_pulse_meter
     update_interval: 1s    
     pin:
-        number: GPIO13
+        number: GPIO18
         inverted: true
         drive_strength: 10.0
         mode:
