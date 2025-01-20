@@ -1,9 +1,0 @@
-output:
-  - platform: gpio
-    pin: GPIO32
-    id: 'zone8_out'
-switch:
-  - platform: output
-    id: zone8
-    name: "Zone 8 Toggle"
-    output: 'zone8_out'
