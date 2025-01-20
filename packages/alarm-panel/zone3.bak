@@ -1,9 +1,0 @@
-output:
-  - platform: gpio
-    pin: GPIO15
-    id: 'zone3_out'
-switch:
-  - platform: output
-    id: zone3
-    name: "Zone 3 Toggle"
-    output: 'zone3_out'
