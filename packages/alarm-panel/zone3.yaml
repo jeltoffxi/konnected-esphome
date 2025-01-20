@@ -1,1 +1,13 @@
+sensor:
+  - platform: pulse_width
+    name: 'Zone 3'
+    id: zone_3_pulse_meter
+    update_interval: 1s    
+    pin:
+        number: GPIO14
+        inverted: true
+        drive_strength: 10.0
+        mode:
+          input: true
+          pullup: true
 
