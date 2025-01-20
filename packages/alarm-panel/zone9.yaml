@@ -1,5 +1,5 @@
 sensor:
   - platform: adc
     pin: GPIO36
-    name: "Zone 8 Voltage"
+    name: "Zone 9 Sensible Voltage"
     update_interval: 1s
