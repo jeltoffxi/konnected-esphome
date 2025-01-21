@@ -1,13 +1,6 @@
 sensor:
-  - platform: pulse_width
-    name: 'Zone 3'
-    id: zone_3_pulse_meter
-    update_interval: 1s    
-    pin:
-        number: GPIO15
-        inverted: true
-        drive_strength: 10.0
-        mode:
-          input: true
-          pullup: true
-
+  - platform: adc
+    pin: GPIO15
+    name: "Zone 3 Sensible Voltage"
+    update_interval: 1s
+    attenuation: 12dB
