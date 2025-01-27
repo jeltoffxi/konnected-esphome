@@ -1,3 +1,4 @@
+sensor:
   - platform: adc
     pin: GPIO04
     name: "Zone 1 Sensible Voltage"
