@@ -1,24 +1,3 @@
-sensor:
-  - platform: pulse_counter
-    unit_of_measurement: 'Liters per Minute'
-    name: "Zone 1"
-    filters:
-      - multiply: 1
-    pin:
-        number: GPIO04
-        inverted: true
-        drive_strength: 10.0
-        mode:
-          input: true
-          pullup: true
-    update_interval : 60s
-
-    total:
-      unit_of_measurement: 'Liters'
-      name: 'Zone 1 Total Liters'
-      filters:
-        - multiply: 1
-
   - platform: adc
     pin: GPIO04
     name: "Zone 1 Sensible Voltage"
