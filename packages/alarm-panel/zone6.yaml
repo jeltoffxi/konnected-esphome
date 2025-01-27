@@ -1,17 +1,6 @@
-binary_sensor:
-
-  - id: zone6
-    name: Zone 6
-    pin:
-      number: $zone6
-      mode: INPUT_PULLUP
-      inverted: True
-    platform: gpio   
-    filters:
-      - delayed_on_off: $sensor_debounce_time
-    on_state:
-      - if:
-          condition:
-            lambda: return id(blink_on_state);
-          then:
-            - script.execute: blink_status_led
+sensor:
+  - platform: adc
+    pin: GPIO14
+    name: "Zone 6 Sensible Voltage"
+    update_interval: 1s
+    attenuation: 12dB
