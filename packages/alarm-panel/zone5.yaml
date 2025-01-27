@@ -15,6 +15,6 @@ sensor:
 
     total:
       unit_of_measurement: 'Liters'
-      name: 'Zone 5 Total Gallons'
+      name: 'Zone 5 Total Liters'
       filters:
         - multiply: 1
