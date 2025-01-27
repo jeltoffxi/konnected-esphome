@@ -18,3 +18,9 @@ sensor:
       name: 'Zone 1 Total Liters'
       filters:
         - multiply: 1
+
+  - platform: adc
+    pin: GPIO04
+    name: "Zone 1 Sensible Voltage"
+    update_interval: 1s
+    attenuation: 12dB
