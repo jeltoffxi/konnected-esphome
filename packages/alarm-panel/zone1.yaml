@@ -1,9 +1,8 @@
 sensor:
-  - platform: pulse_counter
-    unit_of_measurement: 'Liters per Minute'
-    name: "Zone 1"
-    filters:
-      - multiply: 1
+  - platform: pulse_width
+    name: 'Zone 1'
+    id: zone_1_pulse_meter
+    update_interval: 1s    
     pin:
         number: GPIO04
         inverted: true
@@ -11,10 +10,3 @@ sensor:
         mode:
           input: true
           pullup: true
-    update_interval : 60s
-
-    total:
-      unit_of_measurement: 'Liters'
-      name: 'Zone 1 Total Liters'
-      filters:
-        - multiply: 1
