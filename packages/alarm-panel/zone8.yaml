@@ -1,9 +1,6 @@
-output:
-  - platform: gpio
+sensor:
+  - platform: adc
     pin: GPIO32
-    id: 'zone8_out'
-switch:
-  - platform: output
-    id: zone8
-    name: "Zone 8 Toggle"
-    output: 'zone8_out'
+    name: "Zone 8 Sensible Voltage"
+    update_interval: 1s
+    attenuation: 12dB
