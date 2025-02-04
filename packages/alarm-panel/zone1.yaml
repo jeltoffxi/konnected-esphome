@@ -1,7 +1,7 @@
 sensor:
-  - platform: pulse_width
+  - platform: pulse_meter
     name: 'Zone 1'
-    id: zone_1_pulse_meter
+    id: zone_1_pulse_meter_1
     update_interval: 1s    
     pin:
         number: GPIO04
