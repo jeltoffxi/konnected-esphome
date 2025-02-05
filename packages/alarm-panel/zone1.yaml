@@ -1,7 +1,7 @@
 sensor:
   - platform: pulse_counter
     unit_of_measurement: 'Liters per Minute'
-    name: "Zone 11"
+    name: "Zone 1"
     filters:
       - multiply: 1
     pin:
