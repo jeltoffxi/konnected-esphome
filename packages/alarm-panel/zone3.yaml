@@ -1,7 +1,9 @@
 sensor:
-  - platform: pulse_meter
-    name: 'Zone 3'
-    id: zone_3_pulse_meter_1
+  - platform: pulse_counter
+    unit_of_measurement: 'Gallons per Minute'
+    name: "Zone 3-1"
+    filters:
+      - multiply: 10
     pin:
         number: GPIO15
         inverted: true
@@ -9,3 +11,11 @@ sensor:
         mode:
           input: true
           pullup: true
+          open_drain: true
+    update_interval : 60s
+
+    total:
+      unit_of_measurement: 'Gallons'
+      name: 'Zone 3-1 Total Gallons'
+      filters:
+        - multiply: 10
