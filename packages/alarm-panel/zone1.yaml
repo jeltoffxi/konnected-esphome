@@ -18,3 +18,8 @@ sensor:
       name: 'Zone 1-1 Total Liters'
       filters:
         - multiply: 1
+        
+binary_sensor:
+  - platform: gpio
+    name: "Zone 1 Binary"
+    pin: GPIO04
