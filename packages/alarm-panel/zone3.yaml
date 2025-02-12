@@ -1,20 +1,6 @@
 sensor:
-  - platform: pulse_counter
-    unit_of_measurement: 'Gallons per Minute'
-    name: "Zone 3-1"
-    filters:
-      - multiply: 10
-    pin:
-        number: GPIO15
-        inverted: true
-        drive_strength: 10.0
-        mode:
-          input: true
-          pullup: true
-    update_interval : 60s
-
-    total:
-      unit_of_measurement: 'Gallons'
-      name: 'Zone 3-1 Total Gallons'
-      filters:
-        - multiply: 10
+  - platform: adc
+    pin: GPIO15
+    name: "Zone 3 Sensible Voltage"
+    update_interval: 1s
+    attenuation: 12dB
